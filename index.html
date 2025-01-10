@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lars De Richter | Coming Soon</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/inter/3.19.3/inter.css"
+    />
+    <style>
+      :root {
+        --primary-color: #2c1810;
+        --accent-color: #8b4513;
+        --background-color: #fdf5e6;
+        --highlight-color: #d2691e;
+        --muted-color: #a0522d;
+        --link-color: #8b4513;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: var(--background-color);
+        color: var(--primary-color);
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 2rem;
+      }
+
+      main {
+        max-width: 65ch;
+        margin: auto;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+        color: var(--accent-color);
+      }
+
+      .domain {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        font-weight: 600;
+        color: var(--highlight-color);
+        margin-bottom: 2rem;
+        letter-spacing: -0.02em;
+      }
+
+      p {
+        font-size: clamp(1rem, 1.5vw, 1.25rem);
+        max-width: 35ch;
+        margin: 0 auto 1.5rem;
+        color: var(--muted-color);
+      }
+
+      .status {
+        font-family: monospace;
+        font-size: clamp(0.875rem, 1.2vw, 1rem);
+        color: var(--accent-color);
+        opacity: 0.8;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+
+      .typing {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 8s steps(40);
+        border-right: 2px solid var(--accent-color);
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes typing {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+
+      .contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: center;
+        margin-top: 2rem;
+        font-size: 0.9rem;
+      }
+
+      .contact-link {
+        color: var(--link-color);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .contact-link:hover {
+        text-decoration: underline;
+      }
+
+      .contact-link img {
+        width: 1em;
+        height: 1em;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --primary-color: #fdf5e6;
+          --accent-color: #deb887;
+          --background-color: #2c1810;
+          --highlight-color: #f4a460;
+          --muted-color: #d2b48c;
+          --link-color: #deb887;
+        }
+        .contact-link img {
+          filter: invert(1);
+        }
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Under Construction</h1>
+      <div class="domain">larsderichter.be</div>
+      <p>A new website is in development. Thank you for your patience.</p>
+      <div class="status">
+        <span class="typing">Status: Thinking … Designing … Building</span>
+      </div>
+      <div class="contact-list">
+        <a href="mailto:lars.derichter@gmail.com" class="contact-link">
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/9.19.0/gmail.svg"
+            alt="Email"
+          />
+          lars.derichter@gmail.com
+        </a>
+        <a
+          href="https://www.linkedin.com/in/larsderichter/"
+          class="contact-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/9.19.0/linkedin.svg"
+            alt="LinkedIn"
+          />
+          linkedin.com/in/larsderichter
+        </a>
+        <a
+          href="https://github.com/lars-derichter"
+          class="contact-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/9.19.0/github.svg"
+            alt="GitHub"
+          />
+          github.com/lars-derichter
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
